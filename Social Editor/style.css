@@ -21,6 +21,19 @@ button {
   width: 100vw;
 }
 
+/* KEYFRAMES  */
+@keyframes fade-in-from-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-75px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 /* STYLES  */
 
 .header {
@@ -39,6 +52,7 @@ button {
 .logo {
   align-self: center;
   margin: 0px 32px;
+  animation: fade-in-from-top 0.75s;
 }
 
 .dd-toggle:nth-of-type(4) {
@@ -50,6 +64,7 @@ button {
   color: #910a67;
   padding: 8px;
   transition: all 0.4s;
+  animation: fade-in-from-top 0.75s;
 }
 
 .dd-toggle:hover,
@@ -70,4 +85,8 @@ button {
   object-fit: cover;
   border-radius: 50%;
   margin: 3px;
+}
+
+.dd-toggle__text {
+  margin: 0 10px;
 }
