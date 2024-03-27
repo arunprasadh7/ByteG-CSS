@@ -39,6 +39,18 @@ button {
   }
 }
 
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-75px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
 /* STYLES  */
 
 .header {
@@ -69,7 +81,7 @@ button {
   color: #910a67;
   padding: 8px;
   transition: all 0.4s;
-  animation: fade-in-from-top 0.75s;
+  animation: fade-in-from-top 0.75s ease-in-out;
 }
 
 .dd-toggle:hover,
@@ -101,6 +113,58 @@ button {
 .sidebar {
   background-color: #10171a;
   width: 75px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+}
+
+.menu__button {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0;
+  color: rgba(255, 255, 255, 0.4);
+  width: 100%;
+  align-items: center;
+  transition: all 0.4s linear;
+  animation: fade-in-left 0.75s ease-in-out;
+}
+
+.menu__button:hover,
+.menu__button:focus {
+  cursor: pointer;
+  color: #fff;
+  background-color: #2b363c;
+}
+
+.menu__button--active {
+  background-color: #2b363c;
+  border-left: 3px solid blue;
+  color: #fff;
+}
+
+.menu__icon {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.menu__text {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 50px;
+  transform: rotate(-90deg);
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.15);
+  font-size: 12px;
+  white-space: nowrap;
 }
 
 /* --------------------------------------------------------------- */
