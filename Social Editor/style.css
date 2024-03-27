@@ -1,0 +1,73 @@
+/* RESET  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: initial;
+  background-color: initial;
+  color: inherit;
+  font: inherit;
+  outline: none; /* make sure to add focus state */
+}
+
+/* BASE STYLES  */
+.app {
+  font-family: "lato", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* STYLES  */
+
+.header {
+  background-image: linear-gradient(
+    to right,
+    #eea2a2 0%,
+    #bbc1bf 19%,
+    #57c6e1 42%,
+    #b49fda 79%,
+    #7ac5d8 100%
+  );
+  height: 55px;
+  display: flex;
+}
+
+.logo {
+  align-self: center;
+  margin: 0px 32px;
+}
+
+.dd-toggle:nth-of-type(4) {
+  margin-left: auto;
+}
+
+.dd-toggle {
+  font-weight: bold;
+  color: #910a67;
+  padding: 8px;
+  transition: all 0.4s;
+}
+
+.dd-toggle:hover,
+.dd-toggle:focus {
+  cursor: pointer;
+  color: #030637;
+  background-color: #76d2e9;
+}
+
+.dd-toggle:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.dd-toggle__img {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 3px;
+}
