@@ -21,6 +21,11 @@ button {
   width: 100vw;
 }
 
+.app__container {
+  display: flex;
+  height: 90vh;
+}
+
 /* KEYFRAMES  */
 @keyframes fade-in-from-top {
   0% {
@@ -45,7 +50,7 @@ button {
     #b49fda 79%,
     #7ac5d8 100%
   );
-  height: 55px;
+  height: 10vh;
   display: flex;
 }
 
@@ -89,4 +94,25 @@ button {
 
 .dd-toggle__text {
   margin: 0 10px;
+}
+
+/* --------------------------------------------------------------- */
+
+.sidebar {
+  background-color: #10171a;
+  width: 75px;
+}
+
+/* --------------------------------------------------------------- */
+
+.panel {
+  background-color: #2b363c;
+  width: 350px;
+}
+
+/* --------------------------------------------------------------- */
+
+.main {
+  background-color: #edf1fe;
+  flex: 100;
 }
